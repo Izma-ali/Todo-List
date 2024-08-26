@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     
@@ -14,18 +16,21 @@
     <img src="images/notepad4.jpg" alt="" height="50px">
 </div>
 <div class="todobody">
-<input type="text" placeholder="Add your items" class="todoinput" id="userInput">
-</div>
-<div>
+<input type="text" placeholder="Add your task" class="todoinput" id="userInput">
 <img src="images/plus2.png" onclick="addBtn()" alt="" class="todo-img">
 </div>
-<div>
-    <ul id="list">
+<div >
+    <ul id="list" class="listdiv a">
 
     </ul>
 </div>
+<div class="dltAllDiv">
+    <button onclick="dltAll()" class="dltAllstyle">
+        Delete All
+    </button>
 </div>
-
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

@@ -2,34 +2,40 @@
     font-family: "Dancing";
     src: url(fonts/DancingScript-VariableFont_wght.ttf);
 }
-*{
+
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
-    background: rgb(238,174,202);
-background: radial-gradient(circle, #eeaeca 0%, rgba(148,187,233,1) 100%);
-display: flex;
-align-items: center;
-justify-content: center;
-height: 100vh;
-font-family: "Dancing";
-font-size: 28px;
+
+body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, #eeaeca 0%, rgba(148, 187, 233, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Dancing";
+    font-size: 28px;
 }
-.container{
-background-color: white;
-padding: 25px;
-width: 40%;
-border-radius:10px ;
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
-.todoheader{
+
+.container {
+    background-color: white;
+    padding: 25px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.todoheader {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
 }
-.todobody{
+
+.todobody {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,7 +45,8 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
     margin-bottom: 25px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.todoinput{
+
+.todoinput {
     flex: 1;
     border: none;
     outline: none;
@@ -48,15 +55,65 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
     font-size: 25px;
     font-family: "Dancing";
 }
-.todo-img{
-cursor: pointer;
-border-radius: 40px;
-height: 55px;
-width: 55px;
-/* padding: 15px; */
-background-color: white;
+
+.todo-img {
+    cursor: pointer;
+    border-radius: 40px;
+    height: 55px;
+    width: 55px;
+    background-color: white;
 }
-/* .addBtn{
+
+.listItem {
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: radial-gradient(circle, #eeaeca 0%, rgba(148, 187, 233, 1) 100%);
+    border-image-slice: 1;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+
+.listdiv {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 10px;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.btndiv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 12%;
+}
+
+.dltBtnStyle {
+    font-size: 30px;
+    background: none;
     border: none;
-    border-radius: 180px;
-} */
+}
+
+.dltAllstyle {
+    height: 40px;
+    width: 20%;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, #eeaeca 0%, rgba(148, 187, 233, 1) 100%);
+    font-family: "Dancing";
+    font-size: 28px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+.dltAllDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
